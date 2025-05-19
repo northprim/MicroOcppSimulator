@@ -24,13 +24,13 @@ Ubuntu 20.04 and contains all necessary dependencies.
 Firstly, build the image:
 
 ```shell
-docker build -t matthx/microocppsimulator:latest .
+docker build -t northprim/microocppsimulator:latest .
 ```
 
 Then run the image:
 
 ```shell
-docker run -p 8000:8000 matthx/microocppsimulator:latest
+docker run -p 8000:8000 northprim/microocppsimulator:latest
 ```
 
 The Simulator should be up and running now on [localhost:8000](http://localhost:8000).
@@ -51,7 +51,7 @@ sudo apt install cmake libssl-dev build-essential
 Navigate to the preferred installation directory or just to the home folder. Clone the Simulator and all submodules:
 
 ```shell
-git clone --recurse-submodules https://github.com/matth-x/MicroOcppSimulator
+git clone --recurse-submodules https://github.com/northprim/MicroOcppSimulator
 ```
 
 Navigate to the copy of the Simulator and build:

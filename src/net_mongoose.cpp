@@ -151,8 +151,7 @@ void http_serve(struct mg_connection *c, int ev, void *ev_data) {
             struct mg_http_serve_opts opts;
             memset(&opts, 0, sizeof(opts));
             opts.root_dir = "./public";
-            opts.extra_headers = "Content-Type: text/html\r\nContent-Encoding: gzip\r\n";
-            mg_http_serve_file(c, message_data, "public/bundle.html.gz", &opts);
+            mg_http_serve_file(c, message_data, "public/bundle.html", &opts);
         } else {
             mg_http_reply(c, 404, final_headers, "API endpoint not found");
         }

@@ -12,7 +12,7 @@
 	url = https://github.com/northprim/mongoose
 [submodule "webapp-src"]
 	path = webapp-src
-	url = https://github.com/northprim/arduino-ocpp-dashboard.git
+	url = https://github.com/northprim/micro-ocpp-dashboard
 [submodule "lib/mbedtls"]
 	path = lib/mbedtls
 	url = https://github.com/northprim/mbedtls

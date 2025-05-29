@@ -30,7 +30,7 @@ sudo nano /etc/nginx/sites-available/mo_simulator.conf
 ```
 server {
     listen 80;
-    server_name 10.199.67.55;
+    server_name 10.199.67.55 www.charge.okq8.se charge.okq8.se;
 
     location / {
         proxy_pass http://10.199.67.55:8000;
@@ -43,7 +43,7 @@ server {
 
 server {
     listen 443 ssl;
-    server_name 10.199.67.55;
+    server_name 10.199.67.55 www.charge.okq8.se charge.okq8.se;
 
     ssl_certificate /etc/nginx/certs/selfsigned.crt;
     ssl_certificate_key /etc/nginx/certs/selfsigned.key;
